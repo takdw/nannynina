@@ -12,6 +12,11 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public const ALLOWED_FILTERS = [
+        'height',
+        'eye_color'
+    ];
+
     /**
      * The attributes that are mass assignable.
      *
